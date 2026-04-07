@@ -1,8 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "Haxe Font Override",
+  "name": "Haxe Dynamic Font Loader",
   "version": "1.0",
-  "description": "Override all website fonts using WOFF2",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["scripting", "activeTab"],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
