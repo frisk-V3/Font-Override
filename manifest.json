@@ -1,15 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "Haxe Dynamic Font Loader",
+  "name": "Dynamic WOFF2 Font Loader",
   "version": "1.0",
+  "description": "Select a local WOFF2 file and apply it to the current page.",
   "action": {
     "default_popup": "popup.html"
   },
-  "permissions": ["scripting", "activeTab"],
+  "permissions": ["activeTab", "scripting"],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["dist/content.js"]
+      "js": ["content.js"]
     }
   ]
 }
